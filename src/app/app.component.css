@@ -1,0 +1,11 @@
+.app-layout {
+  height: auto;
+  background-color: rebeccapurple;
+}
+
+.bar-button {
+  background-color: transparent;
+  border: none;
+  color: indigo;
+  font-weight: 400;
+}
