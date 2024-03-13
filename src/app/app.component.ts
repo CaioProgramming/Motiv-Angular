@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FontService } from './utils/fonts/font.service';
 import { Title, Meta } from '@angular/platform-browser';
-import { appSettings } from './app.settings';
+import { appSettings } from './core/app.settings';
 
 @Component({
   selector: 'app-root',

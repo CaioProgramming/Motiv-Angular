@@ -6,4 +6,5 @@ export const appSettings = {
         id: 'com.creat.motiv',
         
     }],
+    colors: ['#9575CD', '#5E35B1']
 };

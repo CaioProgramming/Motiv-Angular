@@ -4,7 +4,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app.router.module';
+import { AppRoutingModule } from './core/routes/app.router.module';
 import { UserModule } from './user/user.module';
 import { HomeModule } from './home/home.module';
 import { TuiAppBarModule, TuiIconModule } from '@taiga-ui/experimental';
@@ -19,6 +19,7 @@ import { FontService } from "./utils/fonts/font.service";
 import { provideLottieOptions } from 'ngx-lottie';
 import player from 'lottie-web';
 import { StyleHelper } from "./styles/service/style.helper";
+import { FooterComponent } from "./footer/footer.component";
 
 export function playerFactory() {
     return player;
@@ -27,7 +28,8 @@ export function playerFactory() {
 @NgModule({
     declarations: [
         AppComponent,
-        AppBarComponent
+        AppBarComponent,
+        FooterComponent
     ],
     providers: [FontService,
         StyleHelper,
