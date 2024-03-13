@@ -1,0 +1,16 @@
+<div class="dialog column center" >
+
+    <h3 class="tui-text_h4">{{ dialogConfig?.title }}</h3>
+
+    <p class="tui-text_body-l">{{ dialogConfig?.message }}</p>
+
+    <button appearance="primary" tuiButton type="button"
+    class="margin-10 fill-width"
+    (click)="positiveClick()">
+        {{ dialogConfig?.positiveButton }}
+    </button>
+
+    <button appearance="flat" tuiButton type="button" class="margin-10 fill-width"
+        (click)="negativeClick()"> {{ dialogConfig?.negativeButton}} </button>
+
+</div>

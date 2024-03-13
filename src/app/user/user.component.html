@@ -1,0 +1,39 @@
+
+<div class="column center fill-viewport"  style="background-color: whitesmoke; ">
+    <div tuiCardLarge="" class="root-card">
+
+        <!-- App logo -->
+        <img class="tui-space_top-4 tui-space_bottom-4" style="align-self: center;" src="assets/icons/appIcon_black.svg"
+            width="32px" height="32px" alt="App logo" class="app-logo">
+
+        <!-- Avatar image -->
+        <tui-avatar size="xl" style="align-self: center;" [avatarUrl]="user?.photoURL || placeHolderAvatar"
+            [rounded]="true" alt="User avatar" class="user-avatar" />
+
+        <h3 class="tui-text_h2 card-text">{{ user?.displayName }}</h3>
+
+        <p class="tui-text_body-m card-text">{{ user?.email }}</p>
+
+
+        <p class="tui-text_body-xs card-text" style="opacity: 10%;">{{ user?.uid }}</p>
+
+
+        <!-- Delete account button -->
+
+    </div>
+
+    <button (click)="signOut()" appearance="flat" tuiButton type="button"
+        class="tui-space_right-3 tui-space_bottom-3 tui-space_top-4 " style="width: 400px;">
+        sign out</button>
+
+    <button (click)="confirmDelete()" appearance="secondary-destructive" tuiButton type="button"
+        class="tui-space_right-3 tui-space_bottom-3 tui-space_top-4 " style="width: 400px;">
+        delete account
+    </button>
+
+
+</div>
+<div class="backdrop" *ngIf="dialogConfig"></div>
+
+<simple-dialog style="z-index: 10;" @fadeIn *ngIf="dialogConfig != undefined" [dialogConfig]="dialogConfig" [positiveClick]="positiveButtonClick"
+    [negativeClick]="negativeButtonClick"> >

@@ -1,0 +1,19 @@
+
+<div class="column fill-content align-content-top" *ngIf="style != undefined && quote != undefined">
+
+
+  <img [src]="style.backgroundURL" class="center margin-10" [ngStyle]="styleProperties">
+
+
+  <p class="tui-text_h3" [ngStyle]="textProperties">
+    {{quote.quote || ""}}
+  </p>
+
+  <p class="tui-text_h5" [ngStyle]="textProperties">
+    {{quote.author || ""}}
+  </p>
+  
+
+</div>
+
+

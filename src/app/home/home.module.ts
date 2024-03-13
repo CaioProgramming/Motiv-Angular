@@ -1,12 +1,15 @@
 import { NgModule } from "@angular/core";
-import { BrowserModule } from "@angular/platform-browser";
 import { HomeComponent } from "./home.component";
 import { TuiCardModule } from "@taiga-ui/experimental";
-import { TuiTilesModule } from "@taiga-ui/kit";
+import { CommonModule } from "@angular/common";
+import { QuoteCardComponent } from "../quotes/component/quote.card.component.component";
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { TuiProgressModule } from "@taiga-ui/kit";
+
 
 @NgModule({ 
-    imports: [BrowserModule, TuiCardModule, TuiTilesModule],
-    declarations: [HomeComponent],
+    imports: [ CommonModule, TuiCardModule, TuiProgressModule],
+    declarations: [HomeComponent, QuoteCardComponent],
     providers: [],
 })
 

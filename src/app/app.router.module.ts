@@ -8,11 +8,6 @@ const routes: Routes = [
     component: HomeComponent,
     pathMatch: 'full' 
     }, // Default route
-
-    {
-        path: '**',
-        redirectTo: 'home',
-    },
     {
         path: 'home',
         component: HomeComponent,

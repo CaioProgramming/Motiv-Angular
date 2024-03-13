@@ -1,0 +1,16 @@
+<tui-app-bar class="fixed-nav-bar">
+    <button tuiSlot="left" class="bar-button" (click)="navigateHome()">
+       <img width="32px" height="32px" src="assets/icons/appIcon_black.svg" alt="app icon" class="appIcon" />
+    </button>
+    <ng-container *ngIf="isAuthenticated$ | async; else showLogin" tuiSlot="right" class="bar-button" >
+        <button (click)="openProfile()" tuiSlot="right" class="bar-button" style=" font-weight: 300;">
+            <tui-avatar size="s" style="align-self: center;" [avatarUrl]="user?.photoURL || placeHolderAvatar"
+            [rounded]="true" (alt)="user?.displayName" class="user-avatar" />
+        </button>
+    </ng-container>
+    <ng-template #showLogin>
+        <button tuiSlot="right" (click)="signInWithGoogle()" iconRight="tuiIconChevronRight" class="bar-button">
+            Entrar
+        </button>
+    </ng-template>
+</tui-app-bar>

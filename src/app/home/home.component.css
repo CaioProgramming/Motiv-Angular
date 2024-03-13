@@ -19,51 +19,38 @@
   grid-row-start: 1;
   grid-row-end: 3;
   grid-column-start: 2;
-  grid-column-end:2;
+  grid-column-end: 2;
 
 }
-.cardIcon {
-  width: 75px;
-  height: 75px;
+
+.appIcon:hover {
+  width: 120px;
+  height: 120px;
+  align-content: center;
+  align-items: center;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 2;
 }
-.simpleCard {
-  border-radius: 15px;
-  padding: 16px;
-  margin: 10px;
-  background-color: rgba(211, 211, 211, 0.392);
-}
+
 
 .mainContent {
   background-color: gray;
 }
 
-.row {
-  align-items: center;
-  padding: 16px;
-  margin: 10px;
-  flex-direction: row;
+
+
+a.tui-text_h1 {
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.app-progress-bar {
+  color: black;
+  height: 1px;
+  background-color: transparent;
   display: flex;
-  width: 100%;
-}
-
-
-.grid {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  flex: auto;
+  align-self: center;
   align-items: center;
-  padding: 16px;
-  gap: 1px 1px;
-  height: 100vh;
-  background-color:whitesmoke;
-
-}
-
-.grid-item {
-  height: auto;
-  width: auto;
-}
-
-.highLightText {
- font-weight: 200;
 }

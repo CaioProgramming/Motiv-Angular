@@ -1,0 +1,15 @@
+.simpleCard {
+    border-radius: 15px;
+    padding: 16px;
+    margin: 10px;
+    background-color: rgba(211, 211, 211, 0.392);
+}
+
+.highLightText {
+    font-weight: 200;
+}
+
+.cardIcon {
+    width: 75px;
+    height: 75px;
+}
