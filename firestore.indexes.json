@@ -1,0 +1,19 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "Quotes",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "likes",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "data",
+          "order": "ASCENDING"
+        }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}

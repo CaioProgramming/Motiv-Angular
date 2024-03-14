@@ -1,9 +1,8 @@
 import { Component, Input } from '@angular/core';
-import { animate, style, transition, trigger } from '@angular/animations';
 
 
 @Component({
-  selector: 'simple-dialog',
+  selector: 'app-simple-dialog',
   templateUrl: './simple.dialog.component.html',
   styleUrl: './simple.dialog.component.css',
   

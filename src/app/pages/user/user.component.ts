@@ -1,10 +1,8 @@
-import { CommonModule } from '@angular/common';
-import { Component, HostBinding, Inject, Input, OnInit } from "@angular/core";
+import { Component, HostBinding, Inject, OnInit } from "@angular/core";
 import { Router } from '@angular/router';
-import { User } from 'firebase/auth';
-import { AuthService } from '../auth/auth.service';
+import { AuthService } from '../../auth/auth.service';
 import { TuiDialogService } from '@taiga-ui/core';
-import { DialogConfig } from '../dialogs/simple.dialog/simple.dialog.component';
+import { DialogConfig } from '../../dialogs/simple.dialog/simple.dialog.component';
 import { animate, style, transition, trigger } from '@angular/animations';
 
 @Component({

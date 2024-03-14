@@ -13,7 +13,8 @@ export class StyleService extends FirestoreService<Style> {
     }
 
     override mapSnapshotToData(snapshot: firebase.firestore.QueryDocumentSnapshot<Style>): Style {
-        var style = snapshot.data() as Style;
+        // eslint-disable-next-line no-var
+        const style = snapshot.data() as Style;
         style.id = snapshot.id;
         return style;
     }

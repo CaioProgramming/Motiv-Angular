@@ -19,8 +19,7 @@ export class AuthService extends FirestoreService<User> {
 
 
     override mapSnapshotToData(snapshot: QueryDocumentSnapshot<User>): User {
-        var user = snapshot.data() as User;
-        return user;
+        return snapshot.data() as User;
     }
 
     currentUser$:  Observable<firebase.default.User | null> = this.auth.authState;

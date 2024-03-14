@@ -35,5 +35,5 @@
 </div>
 <div class="backdrop" *ngIf="dialogConfig"></div>
 
-<simple-dialog style="z-index: 10;" @fadeIn *ngIf="dialogConfig != undefined" [dialogConfig]="dialogConfig" [positiveClick]="positiveButtonClick"
+<app-simple-dialog style="z-index: 10;" @fadeIn *ngIf="dialogConfig !== undefined" [dialogConfig]="dialogConfig" [positiveClick]="positiveButtonClick"
     [negativeClick]="negativeButtonClick"> >

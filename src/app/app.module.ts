@@ -1,12 +1,12 @@
-import { TuiRootModule, TuiDialogModule, TuiAlertModule, TUI_SANITIZER, TuiButtonModule } from "@taiga-ui/core";
+import { TuiRootModule, TuiButtonModule } from "@taiga-ui/core";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 // app.module.ts
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './core/routes/app.router.module';
-import { UserModule } from './user/user.module';
-import { HomeModule } from './home/home.module';
+import { UserModule } from './pages/user/user.module';
+import { HomeModule } from './pages/home/home.module';
 import { TuiAppBarModule, TuiIconModule } from '@taiga-ui/experimental';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';

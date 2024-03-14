@@ -9,7 +9,7 @@ export class  StyleHelper {
 
     getStyleForText(textProperties: TextProperties, shadowStyle: ShadowStyle | undefined) : { [key: string]: string } {
         
-        var textStyle : {[key: string]: string} = {
+        const textStyle : {[key: string]: string} = {
             'font-family': textProperties.fontFamily || 'Roboto',
             'text-align': textProperties.textAlignment.toLowerCase(),
             'font-style': textProperties.fontStyle,
@@ -29,7 +29,7 @@ export class  StyleHelper {
         return textStyle;
     }
 
-    getStyleForCard(styleProperties: StyleProperties): {[key: string]: string} {
+    getStyleForCard(): {[key: string]: string} {
         return {
             
             'border-radius': '10px',
@@ -41,10 +41,8 @@ export class  StyleHelper {
     }
 
     getBackgroundColor(styleProperties: StyleProperties): {[key: string]: string} {
-        const defaultColor = 'antiquewhite';
-
         return {
-            'background': `linear-gradient(to bottom, transparent, ${styleProperties.backgroundColor || defaultColor})`,
+            'background': `linear-gradient(to bottom, transparent, ${styleProperties.backgroundColor || 'antiquewhite'})`,
         }
     }
 }

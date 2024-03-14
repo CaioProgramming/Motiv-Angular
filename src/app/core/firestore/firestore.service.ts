@@ -19,8 +19,6 @@ export abstract class FirestoreService<T> {
     async getAllData(): Promise<T[]> {
         const snapshotData = await this.collection.get().toPromise();
         return (snapshotData?.docs || []).flatMap(doc => {
-            const data = doc.data();
-            const id = doc.id;
             return this.mapSnapshotToData(doc);
         });
     }

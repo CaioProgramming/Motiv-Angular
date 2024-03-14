@@ -1,6 +1,6 @@
 <tui-app-bar class="fixed-nav-bar">
     <button tuiSlot="left" class="bar-button" (click)="navigateHome()">
-       <img width="32px" height="32px" src="assets/icons/appIcon_black.svg" alt="app icon" class="appIcon" />
+       <img width="32px" height="32px" [src]="appIcon" [alt]="appName" class="appIcon" />
     </button>
     <ng-container *ngIf="isAuthenticated$ | async; else showLogin" tuiSlot="right" class="bar-button" >
         <button (click)="openProfile()" tuiSlot="right" class="bar-button" style=" font-weight: 300;">

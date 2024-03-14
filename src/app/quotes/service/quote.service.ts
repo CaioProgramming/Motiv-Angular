@@ -12,7 +12,7 @@ import { Quote } from "../model/quote.model";
 export class QuoteService extends FirestoreService<Quote> {
 
     override mapSnapshotToData(snapshot: firebase.firestore.QueryDocumentSnapshot<Quote>): Quote {
-        var quote = snapshot.data() as Quote;
+        const quote = snapshot.data() as Quote;
         quote.id = snapshot.id;
         return quote;
     }

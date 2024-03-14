@@ -1,8 +1,8 @@
 
-<div class="column fill-content align-content-top" *ngIf="style != undefined && quote != undefined">
+<div class="column fill-content align-content-top" *ngIf="style !== undefined && quote !== undefined">
 
 
-  <img [src]="style.backgroundURL" class="center margin-10" [ngStyle]="styleProperties">
+  <img [src]="style.backgroundURL" class="center margin-10" [ngStyle]="styleProperties" [alt]="quote.quote">
 
 
   <p class="tui-text_h3" [ngStyle]="textProperties">
