@@ -1,0 +1,9 @@
+<div class="column" *ngIf="policyData !== undefined">
+
+    <h4 class="tui-text_h4 margin-0"> {{ policyData!.title }} </h4>
+    <p class="tui-text_body-l margin-0" style="padding-top: 8px; padding-bottom: 8px;"> {{ policyData!.description }} </p>
+
+    <ul class="tui-list  tui-list_nested" *ngIf="policyData.items.length > 0">
+        <li class="tui-list__item" *ngFor="let item of policyData.items"> {{ item }} </li>
+    </ul>
+</div>

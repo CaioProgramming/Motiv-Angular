@@ -91,7 +91,6 @@ html {
 .column {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 /* You can add global styles to this file, and also import other style files */

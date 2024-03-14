@@ -1,0 +1,11 @@
+<div class="column padding-16" style="margin-bottom: 50px;">
+
+    <h3 class="tui-text_h3 center">{{ appName }} Privacy policy</h3>
+    <p class="tui-text_body-l">{{ appName }} foi desenvolvido para ajudar os usuários a compartilharem frases e citações inspiradoras. Esta Política de Privacidade ("Política") descreve como coletamos, usamos e protegemos as informações que você fornece ao usar o Aplicativo.</p>
+
+   <app-policy-card *ngFor="let policy of policies" [policyData]="policy"></app-policy-card>
+
+    <p class="tui-text_body-m center">Ao utilizar o {{ appName }} você concorda com a política de Privacidade.</p>
+    <p class="tui-text_body-s-2 center" style="opacity: 0.5;">Atualizado em Março de 2024.</p>
+
+</div>
